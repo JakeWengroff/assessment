@@ -1,0 +1,22 @@
+<h1>Transcribing Numbers Is Fun</h1>
+
+<p>
+<%= form_tag "/", method: 'get' do %>
+
+  <%= text_field_tag :number %>
+
+  <%= submit_tag "Submit" %> 
+
+<% end %>
+</p>
+
+<p>
+<%= @result %>
+</p>
+
+<p>
+<%= link_to "Try Again!", "/" %>
+</p>
+
+
+
